@@ -1,0 +1,14 @@
+boolean doubleX(String str) {
+  int i = 0;
+  while(i < str.length()-1){
+    if(str.charAt(i) == 'x' && str.charAt(i+1) == 'x'){
+      return true;
+    }
+    if(str.charAt(i) == 'x' && str.charAt(i+1) != 'x'){
+      return false;
+    }
+    i++;
+  }
+  
+  return false;
+}
