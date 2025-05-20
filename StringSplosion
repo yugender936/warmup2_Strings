@@ -1,0 +1,16 @@
+public String stringSplosion(String str) {
+   String str1 = "";
+   int count = 1;
+   for(int i = 0 ; i < str.length() ; i++){
+
+     if(count <= str.length()){
+       for(int j = 0 ; j < count ; j++){
+         str1 = str1 + str.charAt(j);
+       }
+       count++;
+     }
+     
+     
+   }
+   return str1;
+}
