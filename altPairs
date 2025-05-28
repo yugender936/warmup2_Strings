@@ -1,0 +1,16 @@
+public String altPairs(String str) {
+  int i = 1;
+  int j = 3;
+  int k = 0;
+  String str1 = "";
+  while(k < str.length()){
+    str1 = str1 + str.charAt(k);
+   if(k % 2 == 0){
+     k = k + 1;
+   }
+   else{
+     k = k + 3;
+   }
+  }
+  return str1;
+}
