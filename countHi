@@ -1,0 +1,12 @@
+public int countHi(String str) {
+  String str1 = "";
+  int count = 0;
+  for(int i = 0 ; i < str.length()-1 ; i++){
+    str1 = str1 + str.charAt(i)+str.charAt(i+1);
+    if(str1.equals("hi")){
+      count++;
+    }
+    str1 = "";
+  }
+  return count;
+}
